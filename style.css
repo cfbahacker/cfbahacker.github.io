@@ -1,0 +1,599 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+:root {
+    --pcolor: #ffffff;
+    --scolor: #23d100;
+    --tcolor: rgb(19, 73, 19);
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    
+    padding: 0px;
+    margin: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    font-size: 62.5;
+    
+}
+
+body {
+    background-color: var(--pcolor);
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header {
+    padding-top: 150px;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://fondosmil.com/fondo/2341.jpg);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 80px;
+    color: var(--pcolor);
+    font-weight: 100px; transform: translate(0px, -1000px);
+    animation-name: titulo1;
+    animation-delay: 0.2s;
+    animation-duration: 2.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+
+header h2 {
+    font-size: 50px;
+    color: var(--pcolor);
+    padding-bottom: 150px;
+    transform: translate(-1000px);
+    animation-name: titulo2;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+.summary {
+    padding: 80px;
+    background-size:cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://images6.alphacoders.com/995/995661.jpg);
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    font-size: 1.5rem;
+}
+
+.summary p {
+    color: var(--pcolor);
+}
+
+
+.summary a {
+    text-decoration: none;
+    color: var(--scolor);
+}
+
+.preamble {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://fondosmil.com/fondo/4493.jpg);
+}
+
+.preamble h3 {
+    font-size: 4rem;
+    color: var(--pcolor);
+    padding-bottom: 100px;
+}
+
+.preamble p {
+    font-size: 1.5rem;
+    color: var(--pcolor);
+}
+
+.main{
+    color: var(--pcolor);
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://www.itl.cat/pngfile/big/77-772213_japan-4k-wallpaper-wallpapersafari-japanese-garden-wallpaper-4k.jpg);
+}
+.explanation {
+    padding: 150px 150px 0px 150px;
+}
+
+.explanation h3 {
+    letter-spacing: 1px;
+    font-size: 4rem;
+    color: var(--pcolor);
+    padding-bottom: 80px;
+}
+
+.explanation p {
+    font-size: 2rem;
+    color: var(--pcolor);
+
+}
+
+.participation {
+    padding: 150px 150px 0px 150px;
+}
+
+.participation h3 {
+    letter-spacing: 1px;
+    font-size: 4rem;
+    color: var(--pcolor);
+    padding-bottom: 80px;
+}
+
+.participation p {
+    font-size: 2rem;
+    color: var(--pcolor);
+}
+
+.participation a {
+  text-decoration: none;
+  color: var(--scolor);
+
+}
+
+.benefits {
+    padding: 150px 150px 0px 150px;
+}
+
+.benefits h3 {
+    letter-spacing: 1px;
+    font-size: 4rem;
+    color: var(--pcolor);
+    padding-bottom: 80px;
+}
+
+.benefits p {
+    font-size: 2rem;
+    color: var(--pcolor);
+
+}
+
+.requirements {
+    padding: 150px 150px 80px 150px;
+}
+
+.requirements h3 {
+    letter-spacing: 1px;
+    font-size: 4rem;
+    color: var(--pcolor);
+    padding-bottom: 80px;
+}
+
+.requirements p {
+    font-size: 2rem;
+    color: var(--pcolor);
+}
+
+.requirements a {
+    text-decoration: none;
+    color: var(--scolor);
+  
+  }
+
+footer{
+    background: linear-gradient(to right, rgba(12, 27, 10, 0.8), rgba(13, 37, 3, 0.8));
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+    text-decoration: none;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+aside .design-selection {
+    color: var(--pcolor);;
+    position: fixed;
+    top: 0;
+    left: -210px;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://images6.alphacoders.com/995/995661.jpg);
+  }
+
+  aside .design-selection:hover {
+    -webkit-animation: aside1 1s forwards;
+    -moz-animation: aside1 1s forwards;
+    -o-animation: aside1 1s forwards;
+    animation: aside1 1s forwards;
+  }
+
+  aside .design-selection ul {
+    list-style-type: none;
+  }
+  
+  aside .design-selection:before {
+    content: '\f054';
+    color: var(--pcolor);
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    right: -30px;
+    top: 50px;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(9, 54, 28, 0);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  aside .design-selection a.design-name {
+    color: var(--pcolor);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+
+  aside .design-selection ul {
+    list-style-type: circle;
+    color: var(--pcolor);
+  }
+
+  aside .design-selection a.design-name:hover {
+    text-decoration: underline;
+  }
+
+  aside .design-selection a.designer-name {
+    color: var(--pcolor);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+aside .design-archives {
+    position: fixed;
+    top: 150px;
+    left: -160px;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://images6.alphacoders.com/995/995661.jpg);
+    border-radius: 0 15px 15px 0;
+  }
+
+  aside .design-archives h3 {
+    color: var(--pcolor);
+  }
+  
+  aside .design-archives:hover {
+    -webkit-animation: aside2 1s forwards;
+    -moz-animation: aside2 1s forwards;
+    -o-animation: aside2 1s forwards;
+    animation: aside2 1s forwards;
+  }
+
+  aside .design-archives ul {
+    list-style-type: circle;
+    color: var(--pcolor);
+  }
+
+
+  aside .design-archives:before {
+    content: '\f054';
+    color: var(--pcolor);
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    right: -30px;
+    top: 3px;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+    line-height: 105px;
+    background-color: rgba(9, 54, 28, 0);
+    cursor: pointer;
+  }
+
+  aside .design-archives a {
+    color: var(--pcolor);
+    text-decoration: none;
+    display: block;
+  }
+
+  aside .zen-resources {
+    position: fixed;
+    top: 205px;
+    left: -210px;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+     ,url(https://images6.alphacoders.com/995/995661.jpg);
+    border-radius: 0 15px 15px 0;
+  }
+  aside .zen-resources h3 {
+    color: var(--pcolor);
+  }
+  aside .zen-resources:hover {
+    -webkit-animation: aside3 1s forwards;
+    -moz-animation: aside3 1s forwards;
+    -o-animation: aside31s forwards;
+    animation: aside3 1s forwards;
+  }
+  aside .zen-resources ul {
+    list-style-type: circle;
+    color: var(--pcolor);
+  }
+  aside .zen-resources ul li {
+    margin-bottom: 10px;
+  }
+  aside .zen-resources:before {
+    content: '\f054';
+    color: #ecf0f1;
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    right: -30px;
+    top: 50px;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+    line-height: 105px;
+    background-color: rgba(9, 54, 28, 0);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  aside .zen-resources a {
+    color: var(--pcolor);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+
+
+/*----------------------------------- Animaciones-------------------------------------------- */
+
+@keyframes titulo1{
+    0%{
+        transform: translate(0px, -1000px);
+    }100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes titulo2{
+    0%{
+        transform: translate(-1000px);
+    }65%{
+        transform: translate(5px) ;
+    }80%{
+        transform: translate(-5px) ;
+    }100%{
+        transform: translate(0px) ;
+    }
+}
+
+@keyframes aside1 {
+    from {
+      left: -230px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @-moz-keyframes aside1 {
+    from {
+      left: -230px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+@keyframes aside2 {
+    from {
+      left: -160px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  @keyframes aside3 {
+    from {
+      left: -230px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @-moz-keyframes aside3 {
+    from {
+      left: -230px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+
+/* ---------------------------------------------------Responsive-------------------------------------------------- */
+
+
+  @media(max-width: 760px) {
+
+    .summary {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        )
+         ,url(https://images6.alphacoders.com/995/995661.jpg);
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .preamble {
+        background-size: cover;
+        padding: 50px 20px 100px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preamble h3{
+        padding-top: 50px;
+        font-size: 2rem;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    .preamble p{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .explanation {
+        padding-right: 0;
+      padding-left: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .explanation h3 {
+       font-size: 1.5rem;
+       padding: 0;
+    }
+
+    .explanation p {
+    padding-top: 20px;
+      font-size: 1rem;
+    }
+
+    .participation {
+      padding-right: 0;
+      padding-left: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .participation h3 {
+       font-size: 1.5rem;
+       padding: 0;
+    }
+
+    .participation p {
+    padding-top: 20px;
+      font-size: 1rem;
+    }
+
+    .benefits {
+        padding-right: 0;
+        padding-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+  
+      }
+  
+      .benefits h3 {
+         font-size: 1.5rem;
+         padding: 0;
+      }
+  
+      .benefits p {
+      padding-top: 20px;
+        font-size: 1rem;
+      }
+
+      .requirements {
+        padding-right: 0;
+        padding-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+  
+      }
+  
+      .requirements h3 {
+         font-size: 1.5rem;
+         padding: 0;
+      }
+  
+      .requirements p {
+        padding-top: 20px;
+        font-size: 1rem;
+      }
+      
+      footer{
+            padding: 0px 50px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+      }
+  }
+  
